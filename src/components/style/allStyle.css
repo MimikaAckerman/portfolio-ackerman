@@ -1,0 +1,51 @@
+/* AvatarProfile.css */
+.avatar-profile {
+    position: absolute;
+    top: 5px; /* Ajusta la posición vertical según tus necesidades */
+    left: 25%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centra horizontalmente */
+  }
+
+  .profile-details {
+    text-align: center; /* Ajusta la alineación del texto según tus necesidades */
+    position: absolute;
+    /* background-color: red; */
+    height: 8%;
+    width: 15%;
+    top: 12%; /* Posiciona el div debajo de la imagen */
+  left: 35%;
+  transform: translateX(-50%);
+    
+  }
+
+  /* Media queries para hacer responsivo el diseño */
+@media screen and (max-width: 600px) {
+  .avatar-profile {
+    top: 10px; /* Ajusta la posición vertical para pantallas pequeñas */
+  }
+
+  .profile-details {
+    top: 120%; /* Ajusta la posición vertical para pantallas pequeñas */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .avatar-profile {
+    top: 20px; /* Ajusta la posición vertical para pantallas muy pequeñas */
+  }
+
+  .profile-details {
+    top: 140%; /* Ajusta la posición vertical para pantallas muy pequeñas */
+  }
+}
+
+.icons{
+  /* background-color: red; */
+  height: 15%;
+  width: 18%;
+  margin-top: -25%;
+  margin-left: 65%;
+}
+.icons svg {
+  margin-right: 10px; /* Ajusta el espacio entre los iconos según tus necesidades */
+}
