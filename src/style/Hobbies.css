@@ -1,0 +1,119 @@
+.hobbies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  max-width: 100%; /* Ensure the section doesn't stretch too much */
+}
+
+.hobbies-list {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.hobbies-list h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hobbies-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hobby-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.hobby-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.hobbies-image {
+  flex: 2;
+  position: relative;
+  max-width: 60%; /* Adjust this percentage to control the width of the carousel */
+  max-height: 100%; /* Ensure the image stays within bounds */
+  overflow: hidden;
+}
+
+.hobby-image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover; /* Ensures images scale nicely */
+}
+
+.mySwiper {
+  width: 100%;
+  height: auto; /* Adjust the height automatically */
+  max-height: 300px; /* Limit the height to match the design */
+}
+
+.swiper-pagination {
+  bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .hobbies {
+    flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .hobbies-list {
+    margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+    margin-bottom: 20px; /* Añade un margen inferior para separación */
+  }
+
+  .hobbies-image {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  }
+
+  .hobbies-list h2 {
+    font-size: 20px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+  }
+
+  .hobby-item {
+    font-size: 16px; /* Ajusta el tamaño de la fuente para los elementos de la lista */
+  }
+}
+
+@media (max-width: 480px) {
+  .hobbies-list h2 {
+    font-size: 18px; /* Más reducción para pantallas muy pequeñas */
+  }
+
+  .hobby-item {
+    font-size: 14px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+  }
+
+  .hobby-icon {
+    width: 25px; /* Reduce el tamaño del icono */
+    height: 25px; /* Reduce el tamaño del icono */
+  }
+}

@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import AvatarProfile from './components/avatarProfile';
-import SocialMedia from './components/socialMedia';
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
-    <AvatarProfile/>
-    <SocialMedia/>
+    <Home/>
     </>
   );
 }
