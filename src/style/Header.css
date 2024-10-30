@@ -14,7 +14,7 @@
 }
 
 .header-content {
-  width: 100%;
+  width: 90%;
 }
 
 .profile {
@@ -113,6 +113,9 @@
 
 .social-media a:hover {
   color: #333;
+}
+.toggleTheme{
+  margin-left: 90%;
 }
 
 /* Estilos responsivos */

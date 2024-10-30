@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../style/Header.css';
 import profilePic from '../../assets/img/photo.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faInstagram, faLinkedin, faYoutube, faFonticons, faBlogger, faWordpress, faMicroblog} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faBlogger, faWordpress, faMicroblog} from '@fortawesome/free-brands-svg-icons';
+import ThemeToggle from '../DarkMode/ThemeToggle';
 
 const Header = () => {
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+
+  const toggleTheme = () => {
+    setIsDarkMode(prevMode => !prevMode);
+  };
+
   return (
     <header className="header">
+
       <div className="header-content">
+        <div className='toggleTheme'>
+        <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} /> {/* Usa ThemeToggle */}
+        </div>
+
         <div className="profile">
           <img src={profilePic} alt='Emily Herrera' className="profile-pic" />
           <div className="profile-info">
