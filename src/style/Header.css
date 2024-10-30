@@ -1,14 +1,16 @@
 .header {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 40px;
+  max-width: 75%; /* Un poco más ancho que los elementos de abajo */
+  width: 90%; /* Para asegurar que se vea bien en pantallas pequeñas */
+  margin: 0 auto; /* Centra el header horizontalmente */
+  padding: 20px; /* Espacio alrededor */
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 8px; /* Curvatura suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .header-content {

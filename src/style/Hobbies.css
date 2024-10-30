@@ -5,8 +5,13 @@
   align-items: flex-start;
   padding: 20px;
   border-radius: 8px;
-  background-color: #f7f7f7;
-  max-width: 100%; /* Ensure the section doesn't stretch too much */
+  background-color: #ffffff;
+  max-width: 75%; /* Ensure the section doesn't stretch too much */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin: 0 auto;
+  margin-top: 10px;
+
+
 }
 
 .hobbies-list {
@@ -58,10 +63,16 @@
   width: 100%;
   height: auto; /* Adjust the height automatically */
   max-height: 300px; /* Limit the height to match the design */
+  border-radius:0 0 15px 15px;
+  overflow: hidden;
 }
-
+.swiper-button-next,
+.swiper-button-prev {
+  display: none; /* Oculta las flechas de navegación */
+}
 .swiper-pagination {
   bottom: 10px;
+  display: none;
 }
 
 .swiper-pagination-bullet {
