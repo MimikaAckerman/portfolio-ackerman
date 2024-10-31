@@ -53,7 +53,7 @@ const Experience: React.FC = () => {
           <li key={exp._id} className="experience-item">
             <img src={getCompanyLogo(exp.company)} alt={`${exp.company} logo`} className="company-logo" />
             <div className="experience-details">
-              <h3>{exp.role} @ <span>{exp.company}</span></h3>
+              <h3 className='exp-'>{exp.role} @ <span className='exp-'>{exp.company}</span></h3>
               <p className="experience-duration">{exp.duration}</p>
             </div>
           </li>

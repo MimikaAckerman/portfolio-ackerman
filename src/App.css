@@ -68,19 +68,91 @@ h2 {
 
 
 
-/*modo oscuro*/
+/* Modo oscuro */
 body.dark-mode {
   background-color: #121212; /* Color de fondo oscuro */
   color: #ffffff; /* Color de texto claro */
 }
 
-.dark-mode header {
-  background-color: #1e1e1e; /* Color de fondo del encabezado */
+/* Fondo del encabezado en modo oscuro */
+.dark-mode .header {
+  background-color: #121212; /* Color de fondo oscuro */
+  
+
 }
 
+/* Fondo del contenido del encabezado en modo oscuro */
+.dark-mode .header-content {
+  background-color: #121212; /* Color de fondo oscuro */
+  
+}
+.dark-mode .about{
+  background-color: #1e1e1e;
+ 
+}
+.dark-mode .name{
+  color: #ffffff; /* Color de texto claro */
+
+}
+.dark-mode .role{
+  color: #ffffff; /* Color de texto claro */
+
+}
+.dark-mode .about-me{
+  color: #ffffff; /* Color de texto claro */
+
+}
+.dark-mode .description{
+  color: #ffffff; /* Color de texto claro */
+
+}
+
+/* Fondo de la sección de proyectos en modo oscuro */
+.dark-mode .projects {
+  background-color: #121212; /* Color de fondo oscuro */
+  color: #ffffff; /* Color de texto claro */
+
+
+}
+
+/* Fondo de las tarjetas de proyectos en modo oscuro */
 .dark-mode .project-card {
-  background-color: #1e1e1e; /* Fondo de tarjetas en modo oscuro */
-  border: 1px solid #444; /* Color de borde más oscuro */
+  background-color: #1e1e1e;
+  color: #ffffff; /* Color de texto claro */
+
+}
+
+/* Fondo de la sección de hobbies en modo oscuro */
+.dark-mode .hobbies {
+  background-color: #434242;
+}
+
+/* Fondo de la sección de experiencia en modo oscuro */
+.dark-mode .experience {
+  background-color: #121212; /* Color de fondo oscuro */
+  color: #ffffff; /* Color de texto claro */
+
+}
+.dark-mode .experience-item{
+  color: #ffffff; /* Color de texto claro */
+
+}
+.dark-mode .exp-{
+  color: #ffffff; /* Color de texto claro */
+
+}
+.dark-mode .hobbies{
+  background-color: #121212; /* Color de fondo oscuro */
+  color: #ffffff; /* Color de texto claro */
+
+}
+.dark-mode .hobbies-title{
+  color: #ffffff; /* Color de texto claro */
+
+}
+.dark-mode .hobby-item{
+  color: #ffffff; /* Color de texto claro */
+
 }
 
 /* estilos del switch modo oscuro */

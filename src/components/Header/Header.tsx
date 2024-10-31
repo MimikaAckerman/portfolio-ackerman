@@ -23,17 +23,17 @@ const Header = () => {
         <div className="profile">
           <img src={profilePic} alt='Emily Herrera' className="profile-pic" />
           <div className="profile-info">
-            <h1>Emily Herrera</h1>
+            <h1 className='name'>Emily Herrera</h1>
             <p className="availability">I'll be available in May.</p>
           </div>
         </div>
         <div className="about">
-          <h2>About Me:</h2>
-          <p className="role">{'{Programmer}} @ 🚀 Mimika Ackerman'}</p>
+          <h2 className='about-me'>About Me:</h2>
+          <p className="role">{'{{Developer}} @ 🚀 Mimika Ackerman'}</p>
           <div className="badges">
-            <span>🌸Traveler</span>
-            <span>mobile application developer</span>
-            <span>big data and artificial intelligence</span>
+            <span>🧳 Traveler</span>
+            <span>📱mobile application developer</span>
+            <span>📊 big data and artificial intelligence</span>
           </div>
           <p className="description">
             I am a highly creative person. In my free time, I enjoy art, traveling, road trips, and taking 

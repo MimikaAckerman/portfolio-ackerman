@@ -31,12 +31,12 @@ const Hobbies: React.FC = () => {
   return (
     <section className="hobbies">
       <div className="hobbies-list">
-        <h2>Hobbies</h2>
+        <h2 className='hobbies-title'>Hobbies</h2>
         <ul>
           {hobbies.map((hobby, index) => (
             <li key={index} className="hobby-item">
               <img src={hobby.icon} alt={`${hobby.name} icon`} className="hobby-icon" />
-              <span>{hobby.name}</span>
+              <span className='hobby-name'>{hobby.name}</span>
             </li>
           ))}
         </ul>

@@ -1,7 +1,13 @@
 // src/components/ThemeToggle.tsx
+
 import React, { useEffect } from 'react';
 
-const ThemeToggle: React.FC<{ isDarkMode: boolean; toggleTheme: () => void }> = ({ isDarkMode, toggleTheme }) => {
+interface ThemeToggleProps {
+  isDarkMode: boolean;
+  toggleTheme: () => void;
+}
+
+const ThemeToggle: React.FC<ThemeToggleProps> = ({ isDarkMode, toggleTheme }) => {
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark-mode');
@@ -18,7 +24,6 @@ const ThemeToggle: React.FC<{ isDarkMode: boolean; toggleTheme: () => void }> = 
         checked={isDarkMode}
         onChange={toggleTheme}
       />
-      {/* La etiqueta puede ser vacía o incluir un texto adicional si deseas */}
     </label>
   );
 };

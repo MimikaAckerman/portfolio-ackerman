@@ -11,6 +11,7 @@
   text-align: center;
   background-color: #ffffff;
   margin-top: 10px;
+  font-family: monospace;
 }
 
 .projects-grid {
@@ -28,9 +29,10 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 16px;
-  background-color: #fff;
+  background-color: #f7f9fc;
   scroll-snap-align: start;
   text-align: center;
+  font-family: monospace;
 }
 
 .project-card img {
@@ -49,6 +51,9 @@
   font-size: 14px;
   color: #555;
 }
+
+
+
 
 /* Estilos responsivos */
 @media (max-width: 768px) {

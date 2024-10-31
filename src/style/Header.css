@@ -79,6 +79,7 @@
   flex-wrap: wrap;
   gap: 10px;
   margin: 15px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .badges span {
@@ -89,6 +90,7 @@
   font-size: 0.9em;
   display: flex;
   align-items: center;
+
 }
 
 .description {
@@ -96,6 +98,7 @@
   color: #666;
   line-height: 1.5;
   margin: 0;
+  font-family: monospace;
 }
 
 .social-media {
